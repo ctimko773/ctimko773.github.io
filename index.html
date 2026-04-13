@@ -4,14 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>ePortfolio</h1>
         <p>Colin Timko</p>
         <p>ePortfolio used to demonstrate three different artifacts. The artifacts were originally created for different classes but were modified in different ways for the portfolio.</p>
-        <button class="btn">Click Me</button>
+        <p class="selfAssessment"><b>Professional Self Assessment</b></p>
+        <p class="selfAssessmentPara">I am proud of the work that I have done for this portfolio. I have put a lot of effort into creating and modifying the artifacts to make them the best that they can be. I have also learned a lot about how to create a portfolio and how to present my work in a professional way.</p>
+    </div>
+
+    <div class="cardContainer">
+        <div class = "card1" data-flip-card>
+            <div class = "cardInner">
+                <div class="cardFront">
+                    <h2>Original Work</h2>
+                    <p class="cardText">This is the original work that I created for my English class. It is a poem that I wrote about the book "The Great Gatsby".</p>
+                </div>
+                <div class="cardBack">
+                    <h2>Enhanced Work</h2>
+                    <p class="cardText">This artifact was created for my English class. It is a poem that I wrote about the book "The Great Gatsby". I modified it for the portfolio by adding some additional lines and changing the formatting.</p>
+                </div>
+            </div>
+            <div class="buttonContainer">
+                <button class="flipButton">Flip</button>
+                <button class ="githubLink" onclick="openProject1(event)">GitHub</button> 
+                <button class ="narritiveBox" onclick="openModal(event, 'modal1')">Narrative</button>
+            </div>
+        </div>
+
+        <div class = "card2" data-flip-card>
+            <div class = "cardInner">
+                <div class="cardFront">
+                    <h2>Original Work</h2>
+                    <p class="cardText">This is the original work that I created for my History class. It is a research paper about the causes of World War II.</p>
+                </div>
+                <div class="cardBack">
+                    <h2>Enhanced Work</h2>
+                    <p class="cardText">This artifact was created for my History class. It is a research paper about the causes of World War II. I modified it for the portfolio by adding some additional sources and changing the formatting.</p>
+                </div>
+            </div>
+            <div class="buttonContainer">
+                <button class="flipButton">Flip</button>
+                <button class="githubLink" onclick="openProject2(event)">GitHub</button>
+                <button class ="narritiveBox" onclick="openModal(event, 'modal2')">Narrative</button>
+            </div>
+        </div>
+
+        <div class = "card3" data-flip-card>
+            <div class = "cardInner">
+                <div class="cardFront">
+                    <h2>Original Work</h2>
+                    <p class="cardText">This is the original work that I created for my Science class. It is a lab report about the effects of acid rain on plant growth.</p>
+                </div>
+                <div class="cardBack">
+                    <h2>Enhanced Work</h2>
+                    <p class="cardText">This artifact was created for my Science class. It is a lab report about the effects of acid rain on plant growth. I modified it for the portfolio by adding some additional data and changing the formatting.</p>
+                </div>
+            </div>
+            <div class="buttonContainer">
+                <button class="flipButton">Flip</button>
+                <button class ="githubLink" onclick="openProject3(event)">GitHub</button>
+                <button class ="narritiveBox" onclick="openModal(event, 'modal3')">Narrative</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Narrative -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <h2>Narrative 1</h2>
+            <p>Card 1 content...</p>
+            <button class="closeButton" onclick="closeModal('modal1')">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <h2>Narrative 2</h2>
+            <p>Card 2 content...</p>
+            <button class="closeButton" onclick="closeModal('modal2')">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <h2>Narrative 3</h2>
+            <p>Card 3 content...</p>
+            <button class="closeButton" onclick="closeModal('modal3')">Close</button>
+        </div>
+    </div>
+
+    <div class="skillsTable">
+        <table>
+            <tr>
+                <th>Languages</th>
+                <th>Frameworks</th>
+                <th>Tools</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Bootstrap</td>
+                <td>Git</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>React</td>
+                <td>VS Code</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Angular</td>
+                <td>Jira</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Django</td>
+                <td></td>
+            </tr>
+        </table>
     </div>
 </body>
 
