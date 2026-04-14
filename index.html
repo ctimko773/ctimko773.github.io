@@ -8,30 +8,53 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>ePortfolio</h1>
-        <p>Colin Timko</p>
-        <p>ePortfolio used to demonstrate three different artifacts. The artifacts were originally created for different classes but were modified in different ways for the portfolio.</p>
+    <div class="infoContainer">
+        <header>
+            <h1>ePortfolio</h1>
+            <p>Colin Timko</p>
+            <p>GitHub: <a href="https://github.com/ctimko773" target="_blank">ctimko773</a></p>
+        </header>
+        <p>
+           {PLACEHOLDER} ePortfolio used to demonstrate three different artifacts. 
+            The artifacts were originally created for different classes but were modified in different ways for the portfolio.
+            Each artifact has a card that shows both the original and enhanced versions of the artifact.
+            There is also buttons that link to each GitHub repository for more information about the enhanced project as well as an accompenying narrative that delves into greater detail on making each enhanced artifact. 
+        </p>
         <p class="selfAssessment"><b>Professional Self Assessment</b></p>
-        <p class="selfAssessmentPara">I am proud of the work that I have done for this portfolio. I have put a lot of effort into creating and modifying the artifacts to make them the best that they can be. I have also learned a lot about how to create a portfolio and how to present my work in a professional way.</p>
+        <p class="selfAssessmentPara">{PLACEHOLDER}I am proud of the work that I have done for this portfolio. I have put a lot of effort into creating and modifying the artifacts to make them the best that they can be. I have also learned a lot about how to create a portfolio and how to present my work in a professional way.</p>
     </div>
 
+
+    <h3>Artifacts</h3>
     <div class="cardContainer">
         <div class = "card1" data-flip-card>
             <div class = "cardInner">
                 <div class="cardFront">
                     <h2>Original Work</h2>
-                    <p class="cardText">This is the original work that I created for my English class. It is a poem that I wrote about the book "The Great Gatsby".</p>
+                    <img src = 'imgs/original_project1.png' alt = 'Original Project 1 Image' class = 'projectImage'>
+                    <p class="cardText">
+                        The original artifacts was a 3D render using C++ and OpenGL. 
+                        The image was recreated using a pre-existing stock photo of a simple coffee table with items on it. 
+                    </p>
+                    <div class="buttonContainer">
+                        <button class="flipButton">Flip</button>
+                        <button class ="githubLink" onclick="openProject1(event)">GitHub</button> 
+                        <button class ="narritiveBox" onclick="openModal(event, 'modal1')">Narrative</button>
+                    </div>
                 </div>
                 <div class="cardBack">
                     <h2>Enhanced Work</h2>
-                    <p class="cardText">This artifact was created for my English class. It is a poem that I wrote about the book "The Great Gatsby". I modified it for the portfolio by adding some additional lines and changing the formatting.</p>
+                    <img src = 'imgs/enhanced_project1.png' alt = 'Enhanced Project 1 Image' class = 'projectImage'>
+                    <p class="cardText">
+                        The enhanced version for this artifact was using the same image but was created instead using WebGL and is displayed on a local server and webpage as opposed to in the terminal.
+                        There is also functionality on the webpage to switch between the stock photo and the WebGL render. 
+                    </p>
+                    <div class="buttonContainer">
+                        <button class="flipButton">Flip</button>
+                        <button class ="githubLink" onclick="openProject1(event)">GitHub</button> 
+                        <button class ="narritiveBox" onclick="openModal(event, 'modal1')">Narrative</button>
+                    </div>
                 </div>
-            </div>
-            <div class="buttonContainer">
-                <button class="flipButton">Flip</button>
-                <button class ="githubLink" onclick="openProject1(event)">GitHub</button> 
-                <button class ="narritiveBox" onclick="openModal(event, 'modal1')">Narrative</button>
             </div>
         </div>
 
@@ -39,17 +62,33 @@
             <div class = "cardInner">
                 <div class="cardFront">
                     <h2>Original Work</h2>
-                    <p class="cardText">This is the original work that I created for my History class. It is a research paper about the causes of World War II.</p>
+                    <img src = 'imgs/original_project2.png' alt = 'Original Project 2 Image' class = 'projectImage'>
+                    <p class="cardText">
+                        The original version of this artifact was basic Java classes that would take different parameters and use JUnit to test those parameters.
+                        The classes were for tasks, appointments, and contacts and the parameters were things like name, description, etc.
+                        The original project was solely used for testing purposes and had no display or output.
+                    </p>
+                    <div class="buttonContainer">
+                        <button class="flipButton">Flip</button>
+                        <button class="githubLink" onclick="openProject2(event)">GitHub</button>
+                        <button class ="narritiveBox" onclick="openModal(event, 'modal2')">Narrative</button>
+                    </div>
                 </div>
                 <div class="cardBack">
                     <h2>Enhanced Work</h2>
-                    <p class="cardText">This artifact was created for my History class. It is a research paper about the causes of World War II. I modified it for the portfolio by adding some additional sources and changing the formatting.</p>
+                    <img src = 'imgs/enhanced_project2.png' alt = 'Enhanced Project 2 Image' class = 'projectImage'>
+                    <p class="cardText">
+                        The enhancements made to the original artifact was to make an interface so the users could see the data that would have been required in the orignal.
+                        I created an API using SpringBoot and created an HTML page that allows the user to see the data from the original java. 
+                        For each of the databases on their own individual pages I added a sort and search algorithm. I used bubble sort and linear search, these are not the fastest methods but they give the best display for the user.
+                        There is also a display that shows the amount of time it took to either sort or search the data so the user can get a better understanding of the time complexity of the algorithms.
+                    </p>
+                    <div class="buttonContainer">
+                        <button class="flipButton">Flip</button>
+                        <button class="githubLink" onclick="openProject2(event)">GitHub</button>
+                        <button class ="narritiveBox" onclick="openModal(event, 'modal2')">Narrative</button>
+                    </div>
                 </div>
-            </div>
-            <div class="buttonContainer">
-                <button class="flipButton">Flip</button>
-                <button class="githubLink" onclick="openProject2(event)">GitHub</button>
-                <button class ="narritiveBox" onclick="openModal(event, 'modal2')">Narrative</button>
             </div>
         </div>
 
@@ -57,17 +96,33 @@
             <div class = "cardInner">
                 <div class="cardFront">
                     <h2>Original Work</h2>
-                    <p class="cardText">This is the original work that I created for my Science class. It is a lab report about the effects of acid rain on plant growth.</p>
+                    <img src = 'imgs/original_project3.png' alt = 'Original Project 3 Image' class = 'projectImage'>
+                    <p class="cardText">
+                        The orignal artifact was a database that used python functions in order to perform CRUD operation (CREATE, READ, UPDATE, DELETE) on a database of animals. 
+                        The functions were made using pure python code and the database was displayed using a Dash server.
+                        The original artifact did not have any authentication or login and the database was viewable by anyone who accessed the webpage.
+                    </p>
+                    <div class="buttonContainer">
+                        <button class="flipButton">Flip</button>
+                        <button class ="githubLink" onclick="openProject3(event)">GitHub</button>
+                        <button class ="narritiveBox" onclick="openModal(event, 'modal3')">Narrative</button>
+                    </div>
                 </div>
                 <div class="cardBack">
                     <h2>Enhanced Work</h2>
-                    <p class="cardText">This artifact was created for my Science class. It is a lab report about the effects of acid rain on plant growth. I modified it for the portfolio by adding some additional data and changing the formatting.</p>
+                    <img src = 'imgs/enhanced_project3.png' alt = 'Enhanced Project 3 Image' class = 'projectImage'>
+                    <p class="cardText">
+                        The enhanced version of this artifact is a web application that uses a flask backend with a basic use of HTML, CSS, and JavaScript as well as MongoDB to store the animal information as well as the credentials of the users. 
+                        The database is displayed on a local server and allows users to perform all the CRUD actions. 
+                        A big part of the enhancements was adding a login function which allows users to create an account using a username and password and the credentials are stored in a database with the password being hashed. 
+                        The database cannot be viewed by public users only those who have signed in.
+                    </p>
+                    <div class="buttonContainer">
+                        <button class="flipButton">Flip</button>
+                        <button class ="githubLink" onclick="openProject3(event)">GitHub</button>
+                        <button class ="narritiveBox" onclick="openModal(event, 'modal3')">Narrative</button>
+                    </div>
                 </div>
-            </div>
-            <div class="buttonContainer">
-                <button class="flipButton">Flip</button>
-                <button class ="githubLink" onclick="openProject3(event)">GitHub</button>
-                <button class ="narritiveBox" onclick="openModal(event, 'modal3')">Narrative</button>
             </div>
         </div>
     </div>
@@ -75,29 +130,47 @@
     <!-- Modal for Narrative -->
     <div class="modal" id="modal1">
         <div class="modal-content">
-            <h2>Narrative 1</h2>
-            <p>Card 1 content...</p>
+            <h2>Artifact 1 Narrative</h2>
+            <p>
+                <p class="indentedText">The artifact was a WebGL render of an existing stock image. The render is run on a local server using Vite a frontend tool as well as Node Package Execute which gets the newest Node packages without the need for global installation. The artifact also uses Three.js which comes with built- in geometry and other fundamentals like animation and transformations. This speeds up the process in running the server as well as the html, css, and JavaScript files that are needed for the artifact. This artifact was enhanced and comes from a previous project that used OpenGL as opposed to WebGL and was run in the terminal rather than a local server. The original was made for CS-330 and was created in July 2025.</p> 
+                <p class="indentedText">This artifact was included in the portfolio due to several factors. One of which was to showcase my ability to have a front end up and running quickly and to be able to use front end languages like HTML, CSS, and JavaScript in collaboration to make a complete project. Another skill demonstrated was my ability to take software I have not worked with before and efficiently do research and read documentation in order to complete the tasks at hand. Finally I was able to demonstrate fundamental 3D image skills like combining simple geometry into a larger more complex shape, transforming the geometry by moving it and rotating it along the axes, and adding textures to the geometry as well as the skybox.</p> 
+                <p class="indentedText">The course outcomes I planned to reach in this artifact were to develop the ability to use skills, tools, and techniques to implement solutions to deliver value at an industry standard as well as develop oral, written, and visible communication and are coherent and can be understood by the intended audience. I feel as though I have met these outcomes if not made steady and fulfilling progress towards them. I was able to use a variety of tools and languages to create a web server and host the project on it and have it run without issue by implementing tests in the developer tools of Chrome. I have made progress towards being able to orally comment and communicate on the project by doing a video code review of the project before the enhancements however on the html page the visible and the written communication is clear and is able to be understood by anyone due to the coherent wiring and labeling of the title and the buttons.</p> 
+                <p class="indentedText">In modifying the original artifact I had to learn how to implement Three.js into the project as well as using the documentation to effectively apply things like transitions and textures to the geometry. I also learned how to use Vite and how fast it is able to provide a front end. The biggest skill I demonstrated was the ability to efficiently create a functional front end as opposed to just starting one with Vite. I was able to use HTML, CSS, and JavaScript effectively in conjunction to add things like the canvas the render is on, functional buttons, and stylization.  It was challenging to apply the three axes to translate the geometry especially after rotation. I also had trouble setting up the listeners for the buttons that allow the user to change between the rendered canvas and the original stock image. However in the end I managed to make them all work together into a functioning coherent artifact.</p>
+            </p>
             <button class="closeButton" onclick="closeModal('modal1')">Close</button>
         </div>
     </div>
 
     <div class="modal" id="modal2">
         <div class="modal-content">
-            <h2>Narrative 2</h2>
-            <p>Card 2 content...</p>
+            <h2>Artifact 2 Narrative</h2>
+            <p id = "artifactNarritive">
+                <p class="indentedText">The original artifact was several classes (tasks, appointments, contacts) in a java project that has parameters, like name, description, etc and the purpose of the original project was to use and test JUnit. This project was created for CS-320 and was created in June 2025.  There was no output or display and it was solely used for testing purposes only. The enhancements I did were to expand the project significantly. I created an API using SpringBoot and created an HTML page that allows the user to see the data from the original java. I also changed the hashmap storage to more permanent storage by using MongoDB to create three different databases for each of the original classes.</p>
+                <p class="indentedText">I included this artifact because it uses Java, a language that is extremely common in real world scenarios, as well as because the original artifact used hashmaps to store the data which created a foundation for me to expand upon with different algorithms and data structures. For each of the databases on their own individual pages I added a sort and search algorithm. I used bubble sort and linear search, as these are not the fastest in the given scenario I felt as though they give the best display to the user of how they work as clicking the buttons allows the user to see the bubble sort in action as well as searching in the bar allows the user to see the algorithm check each database entry.</p> 
+                <p class="indentedText">The outcomes I had planned were to display techniques and skills in practice to deliver industry standard goals as well as design and implement solutions using algorithmic principals to meet goals while weighing the benefits and the downsides. I feel as though I have met these goals especially when concerning algorithms as I had to weigh the benefits and downsides of including faster more efficient sorting algorithms or choosing to go with algorithms that are easier to demonstrate to the user. I also used tools like SpringBoot to my advantage as an easy way to let the user see the databases and how they work in conjunction with the algorithms.</p> 
+                <p class="indentedText">When creating this artifact a big issue I ran into was deciding which algorithms I should implement. I knew that bubble sort had a time complexity of O(n^2) while other sorting algorithms like merge sort have a time complexity of O(n log n) which is much faster. In the end however I felt it best to be able to fully demonstrate the data sorting without having to look under the hood to see exactly how it is done. I also included linear search because the length of the data is relatively small and is also unsorted so I felt this would be the best move. I was able to learn in doing this different types of sorting and searching in action as well as how to use SpringBoot and how it functions as I only have experience with Express in the past.</p>
+
+            </p>
             <button class="closeButton" onclick="closeModal('modal2')">Close</button>
         </div>
     </div>
 
     <div class="modal" id="modal3">
         <div class="modal-content">
-            <h2>Narrative 3</h2>
-            <p>Card 3 content...</p>
+            <h2>Artifact 3 Narrative</h2>
+            <p>
+                <p class="indentedText">The original artifact was a database that used python functions in order to perform CRUD operation (CREATE, READ, UPDATE, DELETE) on a database of animals. The functions were made using pure python code and the database was displayed using a Dash server. The enhancements changed the database and uses HTTP operations as opposed to purely Python ones. The database is now displayed on a local server and allows users to perform all the CRUD actions. A big part of the enhancements was adding a login function which allows users to create an account using a username and password and the credentials are stored in a database with the password being hashed. The database cannot be viewed by public users only those who have signed in. The web application uses a flask backend with a basic use of HTML, CSS, and JavaScript as well as MongoDB to store the animal information as well as the credentials of the users.</p>
+                <p class="indentedText">I chose this artifact for my portfolio because of the use of Python as the backend as well as the implementation of JWT tokenization in order to authenticate users. Flask while being a lightweight backend is a good way to demonstrate how useful Python can be used. Authentication is super important and having a way to register and login to a site as well as being able to keep passwords safe so outside sources can not get them was also a goal to be demonstrated.</p>
+                <p class="indentedText">The outcomes I had planned to align with were to use skills, techniques, and tools in order to meet the goals at an industry standard level, building environments that allow and promote collaboration, and have a security mindset that predicts and prevents any vulnerabilities and protects data and resources. I have met all of these outcomes in this artifact. I used HTTP and python to create a functioning web app that uses CRUD operations which are at the industry standard. I also created a login that hashes passwords and uses JWT tokens to keep the user signed in for a set amount of time without having to store permanent data on the web page.</p> 
+                <p class="indentedText">I initially had a challenge of making sure that my tokens worked and that they stayed in the local storage on the webpage. I learned how to make them work however as well as I solidified my understanding of hashing passwords as well as using Flask as a backend.  I was also able to better understand the whole structure of the project. I knew how routing and api calls worked before but now I was able to implement them with little to no mistakes.</p>
+
+            </p>
             <button class="closeButton" onclick="closeModal('modal3')">Close</button>
         </div>
     </div>
 
     <div class="skillsTable">
+        <h4>Skills</h4>
         <table>
             <tr>
                 <th>Languages</th>
