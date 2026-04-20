@@ -6,26 +6,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-</head>
-<body>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
     <div class="infoContainer">
         <header>
             <h1>ePortfolio</h1>
-            <p>Colin Timko</p>
-            <p>GitHub: <a href="https://github.com/ctimko773" target="_blank">ctimko773</a></p>
-            <p>Informal Code Review: <a href="https://youtu.be/ye-dT6C9RCE" target="_blank">Here</a></p>  
-        </header>
+            <p><b>Colin Timko</b></p>
+            <p><b>GitHub:</b> <a href="https://github.com/ctimko773" target="_blank">ctimko773</a></p>
+            <p><b>Informal Code Review:</b> <a href="https://youtu.be/ye-dT6C9RCE" target="_blank">Here</a></p>
         <p>
-           {PLACEHOLDER} ePortfolio used to demonstrate three different artifacts. 
-            The artifacts were originally created for different classes but were modified in different ways for the portfolio.
-            Each artifact has a card that shows both the original and enhanced versions of the artifact.
-            There is also buttons that link to each GitHub repository for more information about the enhanced project as well as an accompenying narrative that delves into greater detail on making each enhanced artifact. 
+           This ePortfolio is a culmination of my educational career at Southern New Hampshire University. It includes three artifacts that I have enhanced from previous projects as well as a self assessment, a skills table as well as a link to an informal code reviewing going over the pre-enhanced versions. Each of these artifacts demonstrates different skills and techniques that I have learned throughout my time at SNHU and I am proud to showcase them in this portfolio.
+           Each of the three artifacts can be flipped to show the original version of the project as well as the enhanced version. There are also buttons to view the GitHub repository for each project as well as a narrative that goes into detail about the artifact, the outcomes I planned to meet, and how I met those outcomes. The self assessment is a reflection on my educational career and how I have grown as a developer, designer, and team player. The skills table is a list of some of the languages, frameworks, and tools that I have experience with. Overall this ePortfolio is a great representation of my skills and growth as a software engineer.
         </p>
-        <p class="selfAssessment"><b>Professional Self Assessment</b></p>
-        <p class="selfAssessmentPara">{PLACEHOLDER}I am proud of the work that I have done for this portfolio. I have put a lot of effort into creating and modifying the artifacts to make them the best that they can be. I have also learned a lot about how to create a portfolio and how to present my work in a professional way.</p>
-    </div>
+        </header>
+        <h6>Self Assessment</h6>
+        <div class="selfAssessmentPara">
+            <p>Throughout my time at Southern New Hampshire University I was given the opportunity to learn a lot in the world of computer science that has helped me become a better developer, designer, and team player. I strive to have a career in web development and I have been fortunate to have the opportunity to learn things like full-stack development, the fundamentals of HTML, CSS, and JavaScript, different frameworks like Angular and Vue, and much more. I also got to experience the importance of research and proper ways to look into concepts I am not familiar with which is an important and vital skill when working in an ever changing field.</p>
+            <h5>Collaboration</h5>
+            <p>Collaboration is as vital as any other skill in software engineering and is only effective when taken with the utmost care and importance. I had a lot of experience using both Git and GitHub and was able to give commits that are both brief but also informative without bogging down the information. This gave me an individual environment to practice with. I maintained clean, readable, and effective documentation which includes the inline comments as well as the GitHub README. My inline comments were written when the code was unclear without it and the README’s were written taking into account things like possible collaborators, professional reviewers, and non-technical individuals.</p>
+            <h5>Communication</h5>
+            <p>Communication is an important part in any workspace, or even anything in life, but even more so in the field of tech. There are several different careers with several different skillsets and it is vital that everyone is on the same page about a project. I was able to develop the skills to speak to both a technical and nontechnical audience in classes like CS-470 Full Stack Development II in which I presented a full PowerPoint with the idea of a nontechnical audience being on the receiving end. </p>
+            <h5>Data Structures and Algorithms</h5>
+            <p>Data structures and algorithms were an important part in my education and are an important tool in my skillset. I have had a lot of time to learn about things like time and space complexity as well as what structure or algorithm is most efficient or most useful and balance that along with its O notation complexity. Through a lot of trial and error I have been able to learn a lot and came out in the end with a better understanding than when I started.</p>
+            <h5>Software Engineering and Databases</h5>
+            <p>In classes like CS-465 and CS-470 (Full Stack Development I and II) I was able to work with both the front and back end as well as databases in a full working web application. In which I got a full experience working with the MEAN (MongoDB, Express, Angular, NodeJS) stack. During the development of this project I was also able to fully realize the inner workings of both MVC architecture as well as RESTful APIs and their interaction with the stack. </p>
+            <h5>Security</h5>
+            <p>Security is an important metric and skill to implement into web applications. I was able to work with different methods and techniques to ensure secure sites. One of which is password hashing, I used this in my full stack application projects to protect the user logins to prevent any data from being stolen. I also used JWT tokens and stored them in the local storage of the webpage with a timer to ensure that the user stays logged in but also ensures that they cannot access information after they have left the page. </p>
+            <h5>Summary</h5>
+            <p>The three artifacts I chose give a great insight to the culmination of my educational career. Each of the three artifacts was taken from an existing project and was enhanced using knowledge I have gained over time.<br>
 
+                <b>Engineering</b> -  This artifact was taken from a render of an existing stock image in OpenGL and was converted to WebGL along with a webpage to display the rendering using Vue.<br>
 
+                <b>Data Structures and Algorithms</b> - Originally this artifact was a Java application whose sole purpose was to demonstrate JUnit. I took that and enhanced it to add an interface in which the user is able to see bubble sort and linear search in action. This uses my knowledge of time complexity and my balance of what is most efficient and what is most effective given the context of the audience.<br> 
+
+                <b>Databases</b> - The original artifact was a basic database using Jupyter Notebook that displayed a database of animals. The enhancements made were to create a backend using Flask and a front end using basic HTML and CSS to allow the user to sign in with credentials and perform CRUD operations.<br>
+            </p>
+        </div>
     <h3>Artifacts</h3>
     <div class="cardContainer">
         <div class = "card1" data-flip-card>
@@ -58,7 +79,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class = "card2" data-flip-card>
             <div class = "cardInner">
                 <div class="cardFront">
@@ -138,7 +159,7 @@
                 <p class="indentedText">The course outcomes I planned to reach in this artifact were to develop the ability to use skills, tools, and techniques to implement solutions to deliver value at an industry standard as well as develop oral, written, and visible communication and are coherent and can be understood by the intended audience. I feel as though I have met these outcomes if not made steady and fulfilling progress towards them. I was able to use a variety of tools and languages to create a web server and host the project on it and have it run without issue by implementing tests in the developer tools of Chrome. I have made progress towards being able to orally comment and communicate on the project by doing a video code review of the project before the enhancements however on the html page the visible and the written communication is clear and is able to be understood by anyone due to the coherent wiring and labeling of the title and the buttons.</p> 
                 <p class="indentedText">In modifying the original artifact I had to learn how to implement Three.js into the project as well as using the documentation to effectively apply things like transitions and textures to the geometry. I also learned how to use Vite and how fast it is able to provide a front end. The biggest skill I demonstrated was the ability to efficiently create a functional front end as opposed to just starting one with Vite. I was able to use HTML, CSS, and JavaScript effectively in conjunction to add things like the canvas the render is on, functional buttons, and stylization.  It was challenging to apply the three axes to translate the geometry especially after rotation. I also had trouble setting up the listeners for the buttons that allow the user to change between the rendered canvas and the original stock image. However in the end I managed to make them all work together into a functioning coherent artifact.</p>
             </p>
-            <button class="closeButton" onclick="closeModal('modal1')">Close</button>
+            <button class="closeButton" onclick="closeModal('modal1')">&times;</button>
         </div>
     </div>
 
@@ -152,7 +173,7 @@
                 <p class="indentedText">When creating this artifact a big issue I ran into was deciding which algorithms I should implement. I knew that bubble sort had a time complexity of O(n^2) while other sorting algorithms like merge sort have a time complexity of O(n log n) which is much faster. In the end however I felt it best to be able to fully demonstrate the data sorting without having to look under the hood to see exactly how it is done. I also included linear search because the length of the data is relatively small and is also unsorted so I felt this would be the best move. I was able to learn in doing this different types of sorting and searching in action as well as how to use SpringBoot and how it functions as I only have experience with Express in the past.</p>
 
             </p>
-            <button class="closeButton" onclick="closeModal('modal2')">Close</button>
+            <button class="closeButton" onclick="closeModal('modal2')">&times;</button>
         </div>
     </div>
 
@@ -166,7 +187,7 @@
                 <p class="indentedText">I initially had a challenge of making sure that my tokens worked and that they stayed in the local storage on the webpage. I learned how to make them work however as well as I solidified my understanding of hashing passwords as well as using Flask as a backend.  I was also able to better understand the whole structure of the project. I knew how routing and api calls worked before but now I was able to implement them with little to no mistakes.</p>
 
             </p>
-            <button class="closeButton" onclick="closeModal('modal3')">Close</button>
+            <button class="closeButton" onclick="closeModal('modal3')">&times;</button>
         </div>
     </div>
 
@@ -191,12 +212,22 @@
             <tr>
                 <td>JavaScript</td>
                 <td>Angular</td>
-                <td>Jira</td>
+                <td>JWT</td>
             </tr>
             <tr>
                 <td>Python</td>
                 <td>Django</td>
-                <td></td>
+                <td>MongoDB</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>SpringBoot</td>
+                <td>Postman</td>
+            </tr>
+            <tr>
+                <td>TypeScript</td>
+                <td>Flask</td>
+                <td>Vite</td>
             </tr>
         </table>
     </div>

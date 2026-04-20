@@ -3,6 +3,7 @@ body {
 }
 
 h1 {
+    font-family: 'Spectral';
     color: #333;
     font-size: 2.5em;
     margin-bottom: 0.5em;
@@ -32,9 +33,35 @@ header {
 
 }
 
+h5 {
+    font-family: 'Spectral';
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin: auto;
+    font-size: 22px;
+    border-bottom: 2px solid #333;
+    width: fit-content;
+}
+
+h6 {
+    font-family: 'Spectral';
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    color: #333;
+    font-size: 50px;
+    border-bottom: 2px solid #333;
+    width: fit-content;
+}
+
 /* Styles for flip cards */
 
 h3 {
+    font-family: 'Spectral';
     text-align: center;
     color: #333;
     margin-top: 40px;
@@ -113,13 +140,13 @@ h3 {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
-    background-color: #25da0d;
+    background-color: #225f1a;
     border: none;
     cursor: pointer;
 }
 
 .githubLink:hover {
-    background-color: #1e9a0a;
+    background-color: #15450e;
 }
 
 .narritiveBox {
@@ -128,13 +155,13 @@ h3 {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
-    background-color: #100dda;
+    background-color: #0d0b93;
     border: none;
     cursor: pointer;
 }
 
 .narritiveBox:hover {
-    background-color: #0b0aa0;
+    background-color: #08086f;
 }
 
 .buttonContainer {
@@ -188,6 +215,7 @@ img {
 
 .selfAssessment {
     margin-top: 20px;
+    margin-bottom: 0;
     font-size: 1.5em;
     color: #333;
     text-align: center;
@@ -198,13 +226,21 @@ img {
     color: #666;
     line-height: 1.5;
     text-align: center;
-    max-width: 600px;
+    max-width: 90%;
     margin: 0 auto;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.selfAssessmentPara p {
+    font-size: 18px;
+    text-align: left !important;
 }
 
 /*Effects for table displaying a list of skills*/
 
 h4 {
+    font-family: 'Spectral';
     text-align: center;
     color: #333;
     margin-bottom: 10px;
@@ -232,6 +268,10 @@ td, th {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
+}
+
+th {
+    font-family: 'Crete Round';
 }
 
 /* Modal Styles */
